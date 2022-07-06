@@ -46,7 +46,7 @@ const ProductCard = ({ productInfo }) => {
           ))}
         </div>
         {unitsAvailable < 20 && (
-          <span className="absolute bg-red-400 px-2 py-1 rounded-sm bottom-1 right-1">{`${unitsAvailable} left!!`}</span>
+          <span className="absolute bg-red-400 text-white font-bold px-2 py-1 rounded-sm bottom-1 right-1">{`${unitsAvailable} left!!`}</span>
         )}
       </div>
     </div>
