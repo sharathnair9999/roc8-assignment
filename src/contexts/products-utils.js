@@ -1,4 +1,4 @@
-import { data } from "../data";
+import productJSON from "../products.json";
 import { actions } from "./product-actions";
 
 const {
@@ -11,7 +11,7 @@ const {
 } = actions;
 
 export const productsInitialState = {
-  products: data.products,
+  products: productJSON.products,
   filterBy: {
     filterBySize: [],
     filterByBrand: [],

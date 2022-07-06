@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { FilterSection, Navbar, ProductsListing } from "./components";
 import { useProducts } from "./contexts";
 

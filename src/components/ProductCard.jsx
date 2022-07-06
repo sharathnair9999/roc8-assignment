@@ -1,4 +1,5 @@
 import React from "react";
+import { AiFillStar } from "react-icons/ai";
 
 const ProductCard = ({ productInfo }) => {
   const {
@@ -14,7 +15,7 @@ const ProductCard = ({ productInfo }) => {
   return (
     <div className="flex justify-start flex-col relative items-start rounded-sm overflow-hidden cursor-pointer shadow-md transition-all">
       <span
-        className={`absolute top-1 right-1 rounded-md z-10 text-white font-bold px-2 ${
+        className={`absolute top-1 right-1 rounded-md z-10 text-white font-bold px-2 flex justify-center items-center gap-1 ${
           Number(rating) >= 4
             ? "bg-green-500"
             : Number(rating) < 4 && Number(rating) >= 3
@@ -22,7 +23,8 @@ const ProductCard = ({ productInfo }) => {
             : "bg-red-500"
         }  `}
       >
-        {rating}
+        <AiFillStar color="white" size={"1.1rem"} />
+        <span>{rating}</span>
       </span>
       <div className="image-section h-[20rem]">
         <img
@@ -46,7 +48,7 @@ const ProductCard = ({ productInfo }) => {
           ))}
         </div>
         {unitsAvailable < 20 && (
-          <span className="absolute bg-red-400 text-white font-bold px-2 py-1 rounded-sm bottom-1 right-1">{`${unitsAvailable} left!!`}</span>
+          <span className="absolute bg-red-500 text-white font-bold text-sm px-2 py-1 rounded-sm bottom-1 right-1">{`${unitsAvailable} left!!`}</span>
         )}
       </div>
     </div>

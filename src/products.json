@@ -1,0 +1,112 @@
+{
+  "products": [
+    {
+      "productId": "1111",
+      "productName": "Wrangler Checks Shirt",
+      "brand": "Wrangler",
+      "availableSizes": ["M", "L"],
+      "unitsAvailable": 100,
+      "suitableFor": "Men",
+      "mrp": 2000,
+      "productImg": "./assets/check-shirt.jpg",
+      "discountPrice": 1800,
+      "rating": 4.5
+    },
+    {
+      "productId": "1112",
+      "productName": "Cotton Saree",
+      "brand": "Kanchipattu",
+      "availableSizes": ["M", "L", "XL"],
+      "unitsAvailable": 18,
+      "suitableFor": "Women",
+      "mrp": 5500,
+      "productImg": "./assets/saree.jpg",
+      "discountPrice": 4900,
+      "rating": 2.8
+    },
+    {
+      "productId": "1113",
+      "productName": "Shorts For Boys and Girls",
+      "brand": "Wrogn",
+      "availableSizes": ["M", "XL"],
+      "unitsAvailable": 550,
+      "suitableFor": "Unisex",
+      "productImg": "./assets/shorts-for-boys-n-girls.jpg",
+      "mrp": 1999,
+      "discountPrice": 1799,
+      "rating": 5
+    },
+    {
+      "productId": "1114",
+      "productName": "Jockey Socks Pack of 3",
+      "brand": "Jockey",
+      "productImg": "./assets/sockpackof3.jpg",
+      "availableSizes": ["M", "L", "XL"],
+      "unitsAvailable": 10,
+      "suitableFor": "Unisex",
+      "mrp": 2500,
+      "discountPrice": 2200,
+      "rating": 4
+    },
+    {
+      "productId": "1115",
+      "productImg": "./assets/tees1.jpg",
+      "productName": "US Polo T Shirt",
+      "brand": "US Polo",
+      "availableSizes": ["L", "XL"],
+      "unitsAvailable": 100,
+      "suitableFor": "Men",
+      "mrp": 1500,
+      "discountPrice": 1400,
+      "rating": 4.9
+    },
+    {
+      "productId": "1116",
+      "productName": "Denim T Shirt",
+      "productImg": "./assets/tees2.jpg",
+      "brand": "Denim",
+      "availableSizes": ["M", "L", "XL"],
+      "unitsAvailable": 110,
+      "suitableFor": "Men",
+      "mrp": 2000,
+      "discountPrice": 1800,
+      "rating": 3
+    },
+    {
+      "productId": "1117",
+      "productName": "Yolo T Shirt",
+      "brand": "Yolo",
+      "availableSizes": ["M", "L"],
+      "unitsAvailable": 100,
+      "productImg": "./assets/tees2.jpg",
+      "suitableFor": "Men",
+      "mrp": 2000,
+      "discountPrice": 1800,
+      "rating": 4.5
+    },
+    {
+      "productId": "1118",
+      "productName": "Full Length Women Dress",
+      "brand": "Chennai Silks",
+      "availableSizes": ["M", "L"],
+      "unitsAvailable": 100,
+      "suitableFor": "Women",
+      "mrp": 2000,
+      "productImg": "./assets/woman-dress.jpg",
+      "discountPrice": 1800,
+      "rating": 5
+    },
+    {
+      "productId": "1119",
+      "productImg": "./assets/women-pant.jpg",
+      "productName": "Free Pants for Women",
+      "brand": "Jockey",
+      "availableSizes": ["L", "XL"],
+      "unitsAvailable": 200,
+      "suitableFor": "Women",
+      "mrp": 1000,
+      "discountPrice": 800,
+      "rating": 3.5
+    }
+  ]
+}
