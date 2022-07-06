@@ -39,7 +39,7 @@ const FilterSection = () => {
     .filter((b, ind, arr) => arr.lastIndexOf(b) === ind);
 
   return (
-    <div className="rounded-sm min-w-[15rem] bg-white min-h-[calc(100vh-5rem)] pt-10 px-2">
+    <div className=" filters rounded-sm min-w-[15rem] bg-white overflow-y-auto h-[calc(100vh-5rem)] pt-2 px-2">
       <p className="flex w-full justify-between items-center border-b-2  pb-2">
         <span className="font-semibold text-md">Filters</span>
         <button
@@ -49,33 +49,7 @@ const FilterSection = () => {
           Clear
         </button>
       </p>
-      <div className="flex justify-start items-center gap-2">
-        <label htmlFor="low-to-high">
-          <input
-            type="radio"
-            id="low-to-high"
-            name="sort"
-            checked={sortByPrice === "LOW_TO_HIGH"}
-            onChange={() =>
-              productDispatch({ type: SORT_BY_PRICE, payload: "LOW_TO_HIGH" })
-            }
-          />
-          <span>Low To High</span>
-        </label>
-        <label htmlFor="high-to-low">
-          <input
-            type="radio"
-            id="high-to-low"
-            name="sort"
-            checked={sortByPrice === "HIGH_TO_LOW"}
-            onChange={() =>
-              productDispatch({ type: SORT_BY_PRICE, payload: "HIGH_TO_LOW" })
-            }
-          />
-          <span>High To Low</span>
-        </label>
-      </div>
-      <label htmlFor="stock" className="mt-4 block">
+      <label htmlFor="stock" className="mt-4 block pb-2 border-b-2">
         <input
           type="checkbox"
           id="stock"
@@ -89,8 +63,42 @@ const FilterSection = () => {
         />{" "}
         <span>Include Out Of Stock</span>{" "}
       </label>
+      <div className="flex justify-start items-start gap-2 flex-col">
+        <p className="text-md font-semibold">Sort By Price</p>
+        <label
+          htmlFor="low-to-high"
+          className=" flex justify-center items-center gap-1"
+        >
+          <input
+            type="radio"
+            id="low-to-high"
+            name="sort"
+            checked={sortByPrice === "LOW_TO_HIGH"}
+            onChange={() =>
+              productDispatch({ type: SORT_BY_PRICE, payload: "LOW_TO_HIGH" })
+            }
+          />
+          <span>Low To High</span>
+        </label>
+        <label
+          htmlFor="high-to-low"
+          className=" flex justify-center items-center gap-1"
+        >
+          <input
+            type="radio"
+            id="high-to-low"
+            name="sort"
+            checked={sortByPrice === "HIGH_TO_LOW"}
+            onChange={() =>
+              productDispatch({ type: SORT_BY_PRICE, payload: "HIGH_TO_LOW" })
+            }
+          />
+          <span>High To Low</span>
+        </label>
+      </div>
+
       <div className="mt-4 pb-2 border-b-2">
-        <p>Sizes</p>
+        <p className="text-md font-semibold">Sizes</p>
         <div className="flex justify-start  items-center gap-10 w-full px-2">
           {sizes?.map((size) => (
             <label
@@ -113,7 +121,7 @@ const FilterSection = () => {
         </div>
       </div>
       <div className="mt-4 pb-2 border-b-2">
-        <p>Brands</p>
+        <p className="text-md font-semibold">Brands</p>
         <div className="flex flex-col gap-2 items-center justify-center w-full">
           {brands?.map((brand) => (
             <label
@@ -135,7 +143,7 @@ const FilterSection = () => {
         </div>
       </div>
       <div className="mt-4">
-        <p>Ideal For</p>
+        <p className="text-md font-semibold">Ideal For</p>
         <div className="flex flex-col gap-2 items-center justify-center w-full">
           {suitableFor?.map((gender) => (
             <label

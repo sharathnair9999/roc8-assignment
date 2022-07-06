@@ -12,7 +12,7 @@ const ProductsListing = () => {
   const filteredProducts = filterProducts(sortedProducts, filterBy);
 
   return (
-    <div className="rounded-sm w-full pt-10 bg-white h-[calc(100vh-5rem)] p-2 overflow-auto flex justify-start  items-start flex-wrap gap-4">
+    <div className="listing rounded-sm w-full pt-10 bg-white h-[calc(100vh-5rem)] p-2 overflow-auto flex justify-start  items-start flex-wrap gap-4">
       {filteredProducts?.map((product) => (
         <ProductCard key={product.productId} productInfo={product} />
       ))}

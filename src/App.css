@@ -10,3 +10,8 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.filters::-webkit-scrollbar,
+.listing::-webkit-scrollbar {
+  display: none;
+}
