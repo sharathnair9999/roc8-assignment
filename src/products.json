@@ -8,7 +8,7 @@
       "unitsAvailable": 100,
       "suitableFor": "Men",
       "mrp": 2000,
-      "productImg": "./assets/check-shirt.jpg",
+      "productImg": "https://res.cloudinary.com/sharath-media-library/image/upload/v1657128399/roc8%20take%20home%201/check-shirt_vibixv.jpg",
       "discountPrice": 1800,
       "rating": 4.5
     },
@@ -20,7 +20,7 @@
       "unitsAvailable": 18,
       "suitableFor": "Women",
       "mrp": 5500,
-      "productImg": "./assets/saree.jpg",
+      "productImg": "https://res.cloudinary.com/sharath-media-library/image/upload/v1657128399/roc8%20take%20home%201/saree_x40e1s.jpg",
       "discountPrice": 4900,
       "rating": 2.8
     },
@@ -31,7 +31,7 @@
       "availableSizes": ["M", "XL"],
       "unitsAvailable": 550,
       "suitableFor": "Unisex",
-      "productImg": "./assets/shorts-for-boys-n-girls.jpg",
+      "productImg": "https://res.cloudinary.com/sharath-media-library/image/upload/v1657128399/roc8%20take%20home%201/shorts-for-boys-n-girls_jmaejw.jpg",
       "mrp": 1999,
       "discountPrice": 1799,
       "rating": 5
@@ -40,7 +40,7 @@
       "productId": "1114",
       "productName": "Jockey Socks Pack of 3",
       "brand": "Jockey",
-      "productImg": "./assets/sockpackof3.jpg",
+      "productImg": "https://res.cloudinary.com/sharath-media-library/image/upload/v1657128399/roc8%20take%20home%201/sockpackof3_vqkck8.jpg",
       "availableSizes": ["M", "L", "XL"],
       "unitsAvailable": 10,
       "suitableFor": "Unisex",
@@ -50,7 +50,7 @@
     },
     {
       "productId": "1115",
-      "productImg": "./assets/tees1.jpg",
+      "productImg": "https://res.cloudinary.com/sharath-media-library/image/upload/v1657128399/roc8%20take%20home%201/tees2_lydh3v.jpg",
       "productName": "US Polo T Shirt",
       "brand": "US Polo",
       "availableSizes": ["L", "XL"],
@@ -63,7 +63,7 @@
     {
       "productId": "1116",
       "productName": "Denim T Shirt",
-      "productImg": "./assets/tees2.jpg",
+      "productImg": "https://res.cloudinary.com/sharath-media-library/image/upload/v1657128399/roc8%20take%20home%201/tees1_gc2rql.jpg",
       "brand": "Denim",
       "availableSizes": ["M", "L", "XL"],
       "unitsAvailable": 110,
@@ -78,7 +78,7 @@
       "brand": "Yolo",
       "availableSizes": ["M", "L"],
       "unitsAvailable": 100,
-      "productImg": "./assets/tees2.jpg",
+      "productImg": "https://res.cloudinary.com/sharath-media-library/image/upload/v1657128399/roc8%20take%20home%201/tees3_mausud.jpg",
       "suitableFor": "Men",
       "mrp": 2000,
       "discountPrice": 1800,
@@ -92,13 +92,13 @@
       "unitsAvailable": 100,
       "suitableFor": "Women",
       "mrp": 2000,
-      "productImg": "./assets/woman-dress.jpg",
+      "productImg": "https://res.cloudinary.com/sharath-media-library/image/upload/v1657128400/roc8%20take%20home%201/woman-dress_a2rug8.jpg",
       "discountPrice": 1800,
       "rating": 5
     },
     {
       "productId": "1119",
-      "productImg": "./assets/women-pant.jpg",
+      "productImg": "https://res.cloudinary.com/sharath-media-library/image/upload/v1657128400/roc8%20take%20home%201/women-pant_iqxsc2.jpg",
       "productName": "Free Pants for Women",
       "brand": "Jockey",
       "availableSizes": ["L", "XL"],
