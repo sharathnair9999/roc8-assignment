@@ -65,7 +65,11 @@ export const productsReducer = (state, action) => {
       return {
         ...productsInitialState,
       };
-
+    case SORT_BY_PRICE:
+      return {
+        ...state,
+        filterBy: { ...state.filterBy, sortByPrice: payload },
+      };
     default:
       return state;
   }
@@ -91,4 +95,12 @@ export const filterProducts = (products, filters) => {
     .filter(({ brand }) =>
       filterByBrand.length > 0 ? filterByBrand.includes(brand) : true
     );
+};
+
+export const sortProducts = (products, sortBy) => {
+  return sortBy === "LOW_TO_HIGH"
+    ? products.sort((a, b) => a.discountPrice - b.discountPrice)
+    : sortBy === "HIGH_TO_LOW"
+    ? products.sort((a, b) => b.discountPrice - a.discountPrice)
+    : products;
 };

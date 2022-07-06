@@ -1,6 +1,6 @@
 import React from "react";
 import { useProducts } from "../contexts";
-import { filterProducts } from "../contexts/products-utils";
+import { filterProducts, sortProducts } from "../contexts/products-utils";
 import ProductCard from "./ProductCard";
 
 const ProductsListing = () => {
@@ -8,7 +8,8 @@ const ProductsListing = () => {
     productState: { products, filterBy },
   } = useProducts();
 
-  const filteredProducts = filterProducts(products, filterBy);
+  const sortedProducts = sortProducts(products, filterBy.sortByPrice);
+  const filteredProducts = filterProducts(sortedProducts, filterBy);
 
   return (
     <div className="rounded-sm w-full pt-10 bg-white min-h-[calc(100vh-5rem)] p-2 overflow-auto flex justify-start  items-start flex-wrap gap-4">

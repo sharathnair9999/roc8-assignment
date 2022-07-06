@@ -4,7 +4,7 @@ import { SiFlipkart } from "react-icons/si";
 
 const Navbar = () => {
   return (
-    <div className="z-10 bg-cta-dark fixed top-0 left-0 right-0 flex justify-center items-center h-14 px-10">
+    <div className="z-20 bg-cta-dark fixed top-0 left-0 right-0 flex justify-center items-center h-14 px-10">
       <div className="max-w-6xl w-full flex justify-between items-center ">
         <div className="flex justify-start items-center gap-2 max-w-lg w-full">
           <div className="flex justify-center items-center gap-2">

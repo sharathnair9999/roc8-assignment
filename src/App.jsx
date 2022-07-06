@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="main-container flex justify-start items-start gap-2 mt-14 px-2  bg-slate-100 min-h-[calc(100vh-3.5rem)]">
+      <div className="flex justify-center items-start gap-2 mt-14 px-2  bg-slate-100 min-h-[calc(100vh-3.5rem)]">
         <FilterSection />
         <ProductsListing products={products} />
       </div>

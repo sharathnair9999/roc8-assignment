@@ -24,7 +24,6 @@ const FilterSection = () => {
     FILTER_BY_STOCK,
     FILTER_BY_GENDER,
     SORT_BY_PRICE,
-    RESET_FILTERS,
   } = actions;
   const sizes = products
     .map((product) => product.availableSizes)
@@ -50,6 +49,32 @@ const FilterSection = () => {
           Clear
         </button>
       </p>
+      <div className="flex justify-start items-center gap-2">
+        <label htmlFor="low-to-high">
+          <input
+            type="radio"
+            id="low-to-high"
+            name="sort"
+            checked={sortByPrice === "LOW_TO_HIGH"}
+            onChange={() =>
+              productDispatch({ type: SORT_BY_PRICE, payload: "LOW_TO_HIGH" })
+            }
+          />
+          <span>Low To High</span>
+        </label>
+        <label htmlFor="high-to-low">
+          <input
+            type="radio"
+            id="high-to-low"
+            name="sort"
+            checked={sortByPrice === "HIGH_TO_LOW"}
+            onChange={() =>
+              productDispatch({ type: SORT_BY_PRICE, payload: "HIGH_TO_LOW" })
+            }
+          />
+          <span>High To Low</span>
+        </label>
+      </div>
       <label htmlFor="stock" className="mt-4 block">
         <input
           type="checkbox"

@@ -34,7 +34,7 @@ export const data = {
       mrp: 5500,
       productImg: saree,
       discountPrice: 4900,
-      rating: 4.8,
+      rating: 2.8,
     },
     {
       productId: "1113",
