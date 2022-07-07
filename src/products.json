@@ -1,6 +1,18 @@
 {
   "products": [
     {
+      "productId": "1110",
+      "productImg": "https://res.cloudinary.com/sharath-media-library/image/upload/v1657128399/roc8%20take%20home%201/bluepant_zmxzx9.jpg",
+      "productName": "Pencil Fit Pant for Men",
+      "brand": "Denim",
+      "availableSizes": ["XL"],
+      "unitsAvailable": 0,
+      "suitableFor": "Men",
+      "mrp": 4000,
+      "discountPrice": 3900,
+      "rating": 5
+    },
+    {
       "productId": "1111",
       "productName": "Wrangler Checks Shirt",
       "brand": "Wrangler",

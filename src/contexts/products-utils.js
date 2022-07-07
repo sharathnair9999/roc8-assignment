@@ -15,7 +15,7 @@ export const productsInitialState = {
   filterBy: {
     filterBySize: [],
     filterByBrand: [],
-    filterByStock: "",
+    filterByStock: "no",
     filterByGender: [],
     sortByPrice: "",
   },
@@ -86,7 +86,13 @@ export const filterProducts = (products, filters) => {
     .filter(({ suitableFor }) =>
       filterByGender?.length > 0 ? filterByGender.includes(suitableFor) : true
     )
-    .filter(({ unitsAvailable }) => (filterByStock ? unitsAvailable > 0 : true))
+    .filter(({ unitsAvailable }) =>
+      filterByStock === "yes"
+        ? unitsAvailable >= 0
+        : filterByStock === "no"
+        ? unitsAvailable > 0
+        : true
+    )
     .filter(({ availableSizes }) =>
       filterBySize.length > 0
         ? availableSizes.some((size) => filterBySize.includes(size))
